@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">STEM SPARKS</h2>
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>   
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>        
+                </ul>
+            </div>
+            
+            <div class="logos">
+                <img src="profile-logo.png" alt="Profile" class="profile-logo">
+                <img src="cart.webp" alt="Shop" class="shop-logo">
+            </div>
+        </div> 
+        
+        <div class="content">
+            <h1>Spark Curiosity with STEM!</h1>
+            <p class="par">
+                Looking for an unforgettable STEM experience for your school or child’s <br>
+                special day? Our hands-on workshops and exciting STEM-themed parties ignite curiosity <br>
+                and creativity in young learners. Whether it’s a school event or a birthday party, <br>we bring science to life
+                 with interactive experiments, robotics, space exploration, and more!
+            </p>
+            <button class="cn"><a href="#">Book Now</a></button>
+
+            <!-- Login Form -->
+            <div class="form" id="loginForm">
+                <h2>Login Here</h2>
+                <input type="email" id="loginEmail" placeholder="Enter Email Here">
+                <input type="password" id="loginPassword" placeholder="Enter Password Here">
+                <button class="btnn" onclick="validateLogin()">Login</button>
+
+                <p class="link">Don't have an account?<br>
+                <a href="#" onclick="showSignUp()">Sign up</a> here</p>
+                <p class="liw">Log in with</p>
+
+                <div class="icons">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="form" id="signUpForm" style="display: none;">
+                <h2>Sign Up Here</h2>
+                <input type="text" id="signupName" placeholder="Enter Your Name">
+                <input type="email" id="signupEmail" placeholder="Enter Email Here">
+                <input type="password" id="signupPassword" placeholder="Enter Password Here">
+                <button class="btnn" onclick="registerUser()">Sign Up</button>
+
+                <p class="link">Already have an account?<br>
+                <a href="#" onclick="showLogin()">Login here</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="login.js"></script> 
+</body>
+</html>
