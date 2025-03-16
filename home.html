@@ -1,8 +1,38 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Home - STEM SPARKS</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(249, 249, 249, 0.8);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgba(221, 221, 221, 0.8);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <div class="main">
@@ -15,49 +45,77 @@
                 <ul>
                     <li><a href="home.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
+                    <li class="dropdown">
+                        <a href="#">SERVICE</a>
+                        <div class="dropdown-content">
+                            <a href="#">Workshops</a>
+                            <a href="#">Educational Programs</a>
+                            <a href="#">Corporate Training</a>
+                        </div>
+                    </li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
             
             <div class="logos">
                 <img src="profile-logo.png" alt="Profile" class="profile-logo">
-                <!-- <a href="profile.html">
-                    <img src="profile-logo.png" alt="Profile" class="profile-logo" onerror="this.onerror=null; this.src='default-profile.png';">
-                </a> -->
                 <img src="cart.webp" alt="Shop" class="shop-logo">
             </div>
         </div> 
 
-
         <!-- Events Section -->
         <div class="events-container">
-            <div class="event-box">
-                <img src="Birthday.jpg" alt="Birthday Party">
-                <h3>Birthday Party</h3>
-                <p>Celebrate a special day with fun games, music, and delicious cake. Make memories with friends and family!</p>
-            </div>
+            <a href="Birthday_Party.html" class="event-box-link">
+                <div class="event-box">
+                    <img src="Birthday.jpg" alt="Birthday Party">
+                    <h3>Birthday Party</h3>
+                    <p>Celebrate a special day with fun games, music, and delicious cake. Make memories with friends and family!</p>
+                </div>
+            </a>
 
-            <div class="event-box">
-                <img src="School.jpg" alt=" School Events">
-                <h3>School Event</h3>
-                <p>Engage in exciting educational activities, competitions, and fun learning experiences.</p>
-                <p>A great opportunity for students to showcase their talents and skills!</p>
-            </div>
+            <a href="School_Event.html" class="event-box-link">
+                <div class="event-box">
+                    <img src="School.jpg" alt="School Events">
+                    <h3>School Event</h3>
+                    <p>Engage in exciting educational activities, competitions, and fun learning experiences.</p>
+                    <p>A great opportunity for students to showcase their talents and skills!</p>
+                </div>
+            </a>
 
-            <div class="event-box">
-                <img src="corporate event.jpg" alt="Corporate Event">
-                <h3>Corporate Event</h3>
-                <p>Be stress-free while we handle the details for a seamless experience!</p>
-            </div>
+            <a href="Corporate_Event.html" class="event-box-link">
+                <div class="event-box">
+                    <img src="corporate event.jpg" alt="Corporate Event">
+                    <h3>Corporate Event</h3>
+                    <p>Be stress-free while we handle the details for a seamless experience!</p>
+                </div>
+            </a>
 
-            <div class="event-box">
-                <img src="SummserCamp.jpg" alt="Summer Camp">
-                <h3>Summer Camp</h3>
-                <p>A hands-on science camp for young minds to explore experiments and innovations.</p>
-            </div>
+            <a href="Summer_Camp.html" class="event-box-link">
+                <div class="event-box">
+                    <img src="SummserCamp.jpg" alt="Summer Camp">
+                    <h3>Summer Camp</h3>
+                    <p>A hands-on science camp for young minds to explore experiments and innovations.</p>
+                </div>
+            </a>
         </div>
-    </div>
+
+        <!-- CSS to remove link styling -->
+        <style>
+            .event-box-link {
+                text-decoration: none;
+                color: inherit;
+                display: block;
+            }
+            
+            .event-box {
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .event-box:hover {
+                transform: scale(1.05);
+            }
+        </style>
+
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>

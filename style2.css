@@ -84,7 +84,7 @@ main {
 .title-info {
     padding-bottom: 2%;
     font-size: 18px;
-    color: #bbb;
+    color: #ffffff;
 }
 
 .form {
@@ -100,14 +100,15 @@ main {
 }
 
 input, textarea {
-    color: inherit;
+    color: #ffffff; /* Ensures text inside input fields is white */
     width: 100%;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #757575;
+    border-bottom: 1px solid #ffffff;
     padding: 1.5%;
     font-size: 20px;
 }
+
 
 input:focus, textarea:focus {
     background-color: transparent;
@@ -120,7 +121,7 @@ input::placeholder, textarea::placeholder {
 }
 
 label {
-    color: #757575;
+    color: #fffefe;
     position: absolute;
     left: 0.5em;
     top: 1.2em;
